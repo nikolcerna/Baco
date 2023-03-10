@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Baco: your minimalistic wine shop</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tilt+Prism"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Staatliches"
+    />
+    <link
+      href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="common.css" />
+    <script src="winedata.js"></script>
+    <script src="login.js"></script>
+  </head>
+
+  <body>
+    <header id="header">
+      <div style="display: flex">
+        <div class="login"><a href="login.html">Login</a></div>
+        <div><a href="basket.html"><img src="shopping cart icon.png" alt="shopping cart icon" class="icons"></a>  &nbsp &nbsp   </div>
+      </div>
+    </header>
+
+    <div class="banner">
+      <a href="index.html">
+        <img
+          class="logo"
+          src="baco.png"
+          alt="Drawing of Baco, the Roman God of wine"
+        />
+        <span class="brandname">BACO</span>
+      </a>
+      <!-- <div class="logotext">Divine wine, plebeian prices</div>-->
+    </div>
+    <div id="welcome_words_area">
+      <br>
+      <h3 id="welcome_name_area">Welecome to BACO online wine shop!</h3>
+      <h4>What's your divine preference?</h4>
+    </div>
+    <div class="backgroundcss">
+      <!-- <div id="welcome_words_area">
+        <br>
+        <h3 id="welcome_name_area">Welecome to BACO online wine shop!</h3>
+        <h4>What's your divine preference?</h4>
+      </div> -->
+
+      <div class="filters">
+        <span class="filter-btn">RED</span>
+        <span class="menu_dividing_line"></span>
+        <span class="filter-btn">WHITE</span>
+        <span class="menu_dividing_line"></span>
+        <span class="filter-btn">ROSE</span>
+        <span class="menu_dividing_line"></span>
+        <span class="filter-btn">CHAMPAGNE</span>
+      </div>
+
+      
+      <div>
+      <form class= "search-bar">
+        <input class="search" type="text" placeholder="Search for good wine ...">
+        <button id="search-btn"><img id="search-icon" src="search icon baco.png"</button>
+      </form>
+      </div>
+      <div class="filters">
+        <span class="filter-btn">Italy</span>
+        <span class="filter-btn"> France</span>
+        <span class="filter-btn">Portugal</spanton>
+        <span class="filter-btn">Spain</span>
+      </div>
+      <div class="productgrid">
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(1)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_1_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_1_wine_type">Type</span>
+              <span id="product_1_wine_from">From</span>
+              <!--<span class="prodbox-country" id="product_1_wine_country"
+                >Country</span
+              >--> <!--this seems to be redundant-->
+            </div>
+            <span class="prodbox-price" id="product_1_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(2)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_2_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_2_wine_type">Type</span>
+              <span id="product_2_wine_from">From</span>
+              <!--<span class="prodbox-country" id="product_2_wine_country"
+                >Country</span
+              --> <!--this seems to be redundant-->
+            </div>
+            <span class="prodbox-price" id="product_2_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(3)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_3_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_3_wine_type">Type</span>
+              <span id="product_3_wine_from">From</span>
+              <!-- <span class="prodbox-country" id="product_3_wine_country"
+                >Country</span
+              > -->
+            </div>
+            <span class="prodbox-price" id="product_3_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(4)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_4_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_4_wine_type">Type</span>
+              <span id="product_4_wine_from">From</span>
+              <!-- <span class="prodbox-country" id="product_4_wine_country"
+                >Country</span
+              > -->
+            </div>
+            <span class="prodbox-price" id="product_4_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(5)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_5_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_5_wine_type">Type</span>
+              <span id="product_5_wine_from">From</span>
+              <!-- <span class="prodbox-country" id="product_5_wine_country"
+                >Country</span
+              > -->
+            </div>
+            <span class="prodbox-price" id="product_5_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(6)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_6_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_6_wine_type">Type</span>
+              <span id="product_6_wine_from">From</span>
+              <!-- <span class="prodbox-country" id="product_6_wine_country"
+                >Country</span
+              > -->
+            </div>
+            <span class="prodbox-price" id="product_6_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(7)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_7_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_7_wine_type">Type</span>
+              <span id="product_7_wine_from">From</span>
+              <!-- <span class="prodbox-country" id="product_7_wine_country"
+                >Country</span
+              > -->
+            </div>
+            <span class="prodbox-price" id="product_7_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(8)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_8_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_8_wine_type">Type</span>
+              <span id="product_8_wine_from">From</span>
+              <!-- <span class="prodbox-country" id="product_8_wine_country"
+                >Country</span
+              > -->
+            </div>
+            <span class="prodbox-price" id="product_8_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(9)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_9_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_9_wine_type">Type</span>
+              <span id="product_9_wine_from">From</span>
+              <!-- <span class="prodbox-country" id="product_9_wine_country"
+                >Country</span
+              > -->
+            </div>
+            <span class="prodbox-price" id="product_9_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(10)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_10_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_10_wine_type">Type</span>
+              <span id="product_10_wine_from">From</span>
+              <!-- <span class="prodbox-country" id="product_10_wine_country"
+                >Country</span
+              > -->
+            </div>
+            <span class="prodbox-price" id="product_10_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(11)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_11_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_11_wine_type">Type</span>
+              <span id="product_11_wine_from">From</span>
+              <!-- <span class="prodbox-country" id="product_11_wine_country"
+                >Country</span
+              > -->
+            </div>
+            <span class="prodbox-price" id="product_11_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+        <div class="prodbox">
+          <a
+            href="product_detail.html"
+            onclick="setCurrentProductDetailPage(12)"
+          >
+            <div><img src="winepng.png" alt="Red wine bottle" /></div>
+            <div class="prodbox-name" id="product_12_wine_name">Wine1</div>
+            <div class="prodbox-char">
+              <span class="prodbox-type" id="product_12_wine_type">Type</span>
+              <span id="product_12_wine_from">From</span>
+              <!-- <span class="prodbox-country" id="product_12_wine_country"
+                >Country</span
+              > -->
+            </div>
+            <span class="prodbox-price" id="product_12_wine_price">price</span>
+            <span>$</span>
+          </a>
+        </div>
+      </div> <!--is this div redundant? i can not see to what it is conncected to-->
+    </div>
+    <script>
+      function onIndexStart() {
+        addUserNameToWelcome();
+        addAllHomepageProductInfo();
+      }
+      document.body.onload = onIndexStart();
+    </script>
+  </body>
+</html>

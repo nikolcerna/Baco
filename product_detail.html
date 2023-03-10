@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wine Eshop</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <script src="winedata.js"></script>
+  <script src="login.js"></script>
+  <script src="basketdata.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tilt+Prism">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Staatliches">
+  
+  <link rel="stylesheet" href="common.css">
+
+</head>
+<body>
+	<header id="header">
+		<div style="display: flex;">
+			<div><a href="basket.html"><img src="shopping cart icon.png" alt="shopping cart icon" class="icons"></a>  &nbsp &nbsp   </div>
+			<div class="login"><a href="login.html">Login</a></div>
+		</div>
+	</header>
+
+	<div class="banner"> 
+		<a href="index.html">
+		<img class= "logo" src="baco.png" alt="Drawing of Baco, the Roman God of wine">
+		<div class="brandname">
+			BACO
+		</div>
+		</a>
+	   <!-- <div class="logotext">Divine wine, plebeian prices</div>-->
+	</div>
+
+	<div  id="welcome_words_area"> 
+		<h3 id="welcome_name_area"> Welecome to BACO online wine shop!</h3> 
+		<h4> What's your divine preference? </h4>
+	</div>
+
+	<div class="filters">
+		<button>RED</button>
+		<button>WHITE</button>
+		<button>ROSE</button>
+		<button>CHAMPAGNE</button>
+	</div>
+
+	<div class="filters">
+		<button>Italy</button>
+		<button>France</button>
+		<button>Portugal</button>
+		<button>Germany</button>
+	</div>
+
+<br>
+<br>
+<div class="container-fluid">
+	<br>
+	<br>
+	<div class="container mt-5">
+	  <div class="row">
+		<div class="col-md-3"> </div>
+	    <div class="col-md-3">
+	      <img id="wine_image" src="img/wine_1.webp" alt="img" class="img-fluid" width="150" height="400">
+	    </div>
+	    <div class="col-md-6">
+	      <h1 class="mb-4" id="wine_name">Wine Name1</h1>
+	      <p class="lead mb-4">Wine Detail</p>
+	      <h2 class="mb-4" id="wine_price">29.99</h2>
+		  <label class="password">Number:</label>
+          <input class="form-input" id="wine_num" type="number" style="width: 50px;" value="1"/><br/><br/>
+	      <button class="btn btn-primary mb-4" onclick="onClickAddtoBasket()">Add to Basket</button>
+	      <ul class="list-group mb-4">
+			<li class="list-group-item">Type: 
+				<span id="wine_type"></span> 
+			</li>
+	        <li class="list-group-item">Country: 
+				<span id="wine_country"></span>
+			</li>
+	        <li class="list-group-item">Year: 
+				<span id="wine_year"></span>
+			</li>
+	        <li class="list-group-item">Brand:
+				<span id="wine_brand"></span>
+			</li>
+	      </ul>
+
+	      <div class="rating">
+	        <span class="fa fa-star checked"></span>
+	        <span class="fa fa-star checked"></span>
+	        <span class="fa fa-star checked"></span>
+	        <span class="fa fa-star"></span>
+	        <span class="fa fa-star"></span>
+	      </div>
+	    </div>
+	  </div>
+	  <br>
+	  <br>
+	  <hr>
+	  <br>
+	  <h3 class="mb-4">Product Detail</h3>
+	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut tortor in eros sagittis suscipit. Sed aliquam urna nec mi luctus, id sagittis quam dignissim. Praesent eget consequat ipsum. Nam ut diam a risus hendrerit pellentesque. Sed tempor vel felis vitae bibendum. Suspendisse potenti. Praesent faucibus dolor sed odio convallis, eu hendrerit nisl pulvinar. Quisque finibus, lorem vel dapibus rhoncus, libero ex tristique tortor, vel efficitur tortor eros non nulla. Sed vehicula magna quis massa consequat, et sagittis dolor laoreet. Ut ac turpis nec arcu pharetra suscipit sit amet vitae sapien. Duis consectetur lectus ac sollicitudin dapibus. Mauris vel vestibulum sapien.</p>
+	</div>
+	
+</div>
+	<script>
+		function onProductDetailStart() {
+			addUserNameToWelcome();
+			addProductDetailInfo();
+		}
+		document.body.onload = onProductDetailStart(); 
+	</script>
+</body>
+</html>
+
+
