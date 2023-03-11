@@ -5,6 +5,7 @@
 }
 .backgroundcss{
     background-color: #EDE6DB;
+    padding-bottom: 25px;
 }
 a {
     color: #000000;
@@ -91,11 +92,9 @@ padding:10px;
     font-weight: 600;
 
 }
-.filter-btn: 
 
 .filter-btn:hover {
-    color: 
-
+    color: black
 }
 
 /*
@@ -287,4 +286,46 @@ body{
 .btn-submit:hover{
   color: white;
   background-color: #000000;
+}
+
+.price_quantity{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.foot{
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.footdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footbanner{
+    text-align: center;
+}
+
+.footbanner span{
+    width: 40px;
+    height: auto;
+}
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.socialmedia img{
+    width: 30px;
+    height: auto;
 }

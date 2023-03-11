@@ -17,29 +17,47 @@
 
 </head>
 <body>
-	<header id="header">
-		<div style="display: flex;">
+	<!-- <header id="header">
+		<div style="display: flex; gap: 10px;">
 			<div><a href="basket.html"><img src="shopping cart icon.png" alt="shopping cart icon" class="icons"></a>  &nbsp &nbsp   </div>
 			<div class="login"><a href="login.html">Login</a></div>
 		</div>
+	</header> -->
+	<header id="header">
+		<div style="display: flex">
+		  <div class="login"><a href="login.html">Login</a></div>
+		  <div><a href="basket.html"><img src="shopping cart icon.png" alt="shopping cart icon" class="icons"></a>  &nbsp &nbsp   </div>
+		</div>
 	</header>
+  
+	  <div class="banner  backgroundcss">
+		<a href="index.html">
+		  <img
+			class="logo"
+			src="baco.png"
+			alt="Drawing of Baco, the Roman God of wine"
+		  />
+		  <span class="brandname">BACO</span>
+		</a>
+		<!-- <div class="logotext">Divine wine, plebeian prices</div>-->
+	  </div>
 
-	<div class="banner"> 
+	<!-- <div class="banner"> 
 		<a href="index.html">
 		<img class= "logo" src="baco.png" alt="Drawing of Baco, the Roman God of wine">
 		<div class="brandname">
 			BACO
 		</div>
 		</a>
-	   <!-- <div class="logotext">Divine wine, plebeian prices</div>-->
-	</div>
+	    <div class="logotext">Divine wine, plebeian prices</div>
+	</div> -->
 
-	<div  id="welcome_words_area"> 
+<!-- 	<div  id="welcome_words_area"> 
 		<h3 id="welcome_name_area"> Welecome to BACO online wine shop!</h3> 
 		<h4> What's your divine preference? </h4>
-	</div>
+	</div> -->
 
-	<div class="filters">
+<!-- 	<div class="filters">
 		<button>RED</button>
 		<button>WHITE</button>
 		<button>ROSE</button>
@@ -51,13 +69,11 @@
 		<button>France</button>
 		<button>Portugal</button>
 		<button>Germany</button>
-	</div>
+	</div> -->
 
 <br>
 <br>
 <div class="container-fluid">
-	<br>
-	<br>
 	<div class="container mt-5">
 	  <div class="row">
 		<div class="col-md-3"> </div>
@@ -68,8 +84,9 @@
 	      <h1 class="mb-4" id="wine_name">Wine Name1</h1>
 	      <p class="lead mb-4">Wine Detail</p>
 	      <h2 class="mb-4" id="wine_price">29.99</h2>
-		  <label class="password">Number:</label>
-          <input class="form-input" id="wine_num" type="number" style="width: 50px;" value="1"/><br/><br/>
+			<label class="password">Number:</label>
+			<input class="number-form-input" id="wine_num" type="number" style="width: 50px;" value="1"/><br/><br/>
+		  
 	      <button class="btn btn-primary mb-4" onclick="onClickAddtoBasket()">Add to Basket</button>
 	      <ul class="list-group mb-4">
 			<li class="list-group-item">Type: 
