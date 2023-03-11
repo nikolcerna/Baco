@@ -30,7 +30,7 @@
     <header id="header">
       <div style="display: flex">
         <div class="login"><a href="login.html">Login</a></div>
-        <div><a href="basket.html"><img src="shopping cart icon.png" alt="shopping cart icon" class="icons"></a>  &nbsp &nbsp   </div>
+        <div><a href="basket.html"><img src="shopping cart icon.png" alt="shopping cart icon" class="icons" id="#icon-change"></a>  &nbsp &nbsp   </div>
       </div>
     </header>
 
@@ -48,12 +48,22 @@
     <div id="welcome_words_area">
       <h3 id="welcome_name_area">your minimalistic wine shop</h3>
     </div>
-    <div class="backgroundcss">
+    <div>
       <!-- <div id="welcome_words_area">
         <br>
-        <h3 id="welcome_name_area">Welecome to BACO online wine shop!</h3>
+        <h3 id="welcome_name_area">Welcome to BACO online wine shop!</h3>
         <h4>What's your divine preference?</h4>
       </div> -->
+
+       <div><img id="banner" src="wine day, extra narrow.jpg" alt="Banner Event"></div>
+
+    
+      <div>
+      <form class= "search-bar">
+        <input type="text" class="search" placeholder="Search for good wine ..." name="" value="" action="">
+        <button id="search-btn"><img id="search-icon" src="search icon baco.png"</button> 
+      </form>
+      </div>
 
       <div class="filters">
         <span class="filter-btn" onclick="changeColor()"> <a href=""></a>
@@ -65,7 +75,7 @@
         <span class="menu_dividing_line"></span>
         <span class="filter-btn">CHAMPAGNE</span>
       </div>
-
+      
       <div class="filters">
         <span class="filter-btn" onclick="changeColor()"> <a href=""></a>
           FRANCE</span>
@@ -76,19 +86,14 @@
         <span class="menu_dividing_line"></span>
         <span class="filter-btn">SPAIN</span>
       </div>
-
-      <div>
-      <form class= "search-bar">
-        <input type="text" class="search" placeholder="Search for good wine ..." name="" value="" action="">
-        <button id="search-btn"><img id="search-icon" src="search icon baco.png"</button> 
-      </form>
-      </div>
+      
       <!-- <div class="filters">
         <span class="filter-btn">Italy</span>
         <span class="filter-btn"> France</span>
         <span class="filter-btn">Portugal</spanton>
         <span class="filter-btn">Spain</span>
       </div> we will put this in the filter page--> 
+      <br><h3 id="newestProducts">Discover our newest premium wines</h3>
       <div class="productgrid">
         <div class="prodbox">
           <a

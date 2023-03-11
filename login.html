@@ -24,7 +24,7 @@
 		</div>
 	</header>
   
-	  <div class="banner  backgroundcss">
+	  <div class="banner">
 		<a href="index.html">
 		  <img
 			class="logo"
@@ -73,25 +73,27 @@
 	</div> -->
 
 
-<br>
-<br>
-<div class="container-fluid">
+<div class="backgroundcss">
+  <br>
+  <br>
+  <div class="container-fluid">
     <form class="loginframe">
-        <label class="account">Name:</label>
-        <input class="form-input"  id="account" type="text" value="" /><br/><p></p>
-        <label class="password">Password:</label>
-        <input class="form-input" id="password" type="password" value="" /><br/><br/>
-        <input class="btn-submit"  type="button" onclick="onSubmitLogin()" value="SUBMIT" />
+      <label class="account">Name:</label>
+      <input class="form-input"  id="account" type="text" value="" /><br/><p></p>
+      <label class="password">Password:</label>
+      <input class="form-input" id="password" type="password" value="" /><br/><br/>
+      <input class="btn-submit"  type="button" onclick="onSubmitLogin()" value="SUBMIT" />
     </form>
+  </div>
+
+
+  
 </div>
-
-
 <script>
   function onLoginStart() {   
       // addUserNameToWelcome();
   }
   document.body.onload = onLoginStart();
 </script>
-
 </body>
 </html>

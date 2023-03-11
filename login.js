@@ -11,7 +11,7 @@ function isLogin(){
 function addUserNameToWelcome() {
 	if (isLogin() && getUserName() !== null) {
 		//innialText = document.getElementById("welcome_name_area").innerText;
-		document.getElementById("welcome_name_area").innerText = getUserName() + ", welecome to BACO online wine shop!" // + innialText; 
+		document.getElementById("welcome_name_area").innerText = getUserName() + ", welcome to BACO online wine shop!" // + innialText; 
 	}
 }
 
