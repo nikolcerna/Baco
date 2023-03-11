@@ -69,9 +69,9 @@ function onClickAddtoBasket() {
 
 	basketItemsMap.set(name, {
 		num: num,
-		price: "DKK" + price,
+		price: "$" + price,
 		name : name,
-		totalPrice: "DKK" + totalPrice 
+		totalPrice: "$" + totalPrice 
 	})
 	saveBasketMap(basketItemsMap);
 	alert("Add to basket successfully!");
