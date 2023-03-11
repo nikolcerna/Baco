@@ -15,6 +15,8 @@
       href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
 
@@ -55,7 +57,8 @@
       </div> -->
 
       <div class="filters">
-        <span class="filter-btn">RED</span>
+        <span class="filter-btn" onclick="changeColor()"> <a href=""></a>
+          RED</span>
         <span class="menu_dividing_line"></span>
         <span class="filter-btn">WHITE</span>
         <span class="menu_dividing_line"></span>
@@ -64,19 +67,18 @@
         <span class="filter-btn">CHAMPAGNE</span>
       </div>
 
-      
       <div>
       <form class= "search-bar">
-        <input class="search" type="text" placeholder="Search for good wine ...">
-        <button id="search-btn"><img id="search-icon" src="search icon baco.png"</button>
+        <input type="text" class="search" placeholder="Search for good wine ..." name="" value="" action="">
+        <button id="search-btn"><img id="search-icon" src="search icon baco.png"</button> 
       </form>
       </div>
-      <div class="filters">
+      <!-- <div class="filters">
         <span class="filter-btn">Italy</span>
         <span class="filter-btn"> France</span>
         <span class="filter-btn">Portugal</spanton>
         <span class="filter-btn">Spain</span>
-      </div>
+      </div> we will put this in the filter page--> 
       <div class="productgrid">
         <div class="prodbox">
           <a
@@ -93,8 +95,10 @@
               >--> <!--this seems to be redundant-->
             </div>
             <span class="prodbox-price" id="product_1_wine_price">price</span>
-            <span>$</span>
           </a>
+          <br>
+          <input class="btn-add-to-cart"  type="button" onclick="" value="ADD TO CART" /> <!-- add function on click -->
+
         </div>
         <div class="prodbox">
           <a
@@ -111,7 +115,6 @@
               --> <!--this seems to be redundant-->
             </div>
             <span class="prodbox-price" id="product_2_wine_price">price</span>
-            <span>$</span>
           </a>
         </div>
         <div class="prodbox">
@@ -129,7 +132,6 @@
               > -->
             </div>
             <span class="prodbox-price" id="product_3_wine_price">price</span>
-            <span>$</span>
           </a>
         </div>
         <div class="prodbox">
@@ -147,7 +149,6 @@
               > -->
             </div>
             <span class="prodbox-price" id="product_4_wine_price">price</span>
-            <span>$</span>
           </a>
         </div>
         <div class="prodbox">
@@ -165,7 +166,6 @@
               > -->
             </div>
             <span class="prodbox-price" id="product_5_wine_price">price</span>
-            <span>$</span>
           </a>
         </div>
 
@@ -184,7 +184,6 @@
               > -->
             </div>
             <span class="prodbox-price" id="product_6_wine_price">price</span>
-            <span>$</span>
           </a>
         </div>
         <div class="prodbox">
@@ -202,7 +201,6 @@
               > -->
             </div>
             <span class="prodbox-price" id="product_7_wine_price">price</span>
-            <span>$</span>
           </a>
         </div>
         <div class="prodbox">
@@ -220,7 +218,6 @@
               > -->
             </div>
             <span class="prodbox-price" id="product_8_wine_price">price</span>
-            <span>$</span>
           </a>
         </div>
         <div class="prodbox">
@@ -238,7 +235,6 @@
               > -->
             </div>
             <span class="prodbox-price" id="product_9_wine_price">price</span>
-            <span>$</span>
           </a>
         </div>
         <div class="prodbox">
@@ -256,7 +252,6 @@
               > -->
             </div>
             <span class="prodbox-price" id="product_10_wine_price">price</span>
-            <span>$</span>
           </a>
         </div>
 
@@ -275,7 +270,6 @@
               > -->
             </div>
             <span class="prodbox-price" id="product_11_wine_price">price</span>
-            <span>$</span>
           </a>
         </div>
         <div class="prodbox">
@@ -293,7 +287,6 @@
               > -->
             </div>
             <span class="prodbox-price" id="product_12_wine_price">price</span>
-            <span>$</span>
           </a>
         </div>
       </div> <!--is this div redundant? i can not see to what it is conncected to-->

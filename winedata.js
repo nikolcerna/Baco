@@ -139,10 +139,10 @@ function addAllHomepageProductInfo() {
 
 function addHomepageProductInfo(product, i) {
 	document.getElementById("product_"+ i + "_wine_name").innerText = product.name;
-	document.getElementById("product_"+ i + "_wine_type").innerText = product.type;
-	document.getElementById("product_"+ i + "_wine_from").innerText = product.country;
+	document.getElementById("product_"+ i + "_wine_type").innerText = product.type + " wine";
+	document.getElementById("product_"+ i + "_wine_from").innerText = "from " + product.country;
 	/*document.getElementById("product_"+ i + "_wine_country").innerText = product.country;*/
-	document.getElementById("product_"+ i + "_wine_price").innerText = product.price;
+	document.getElementById("product_"+ i + "_wine_price").innerText = product.price + " $";
 	// document.getElementById("wine_image").src = "img/wine_" + (i + 1) + ".webp";
 }
 
@@ -150,3 +150,26 @@ function addHomepageProductInfo(product, i) {
 function setCurrentProductDetailPage(i) {
   localStorage.setItem("current_product_detail_page_num", i);
 }
+
+function changeColor(){
+
+  const filterBtns = document.querySelectorAll('.filter-btn');
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      // Change the color of the clicked button to red
+      btn.style.color = "#756e62";
+  
+      // Reset the color of the other buttons
+      filterBtns.forEach(otherBtn => {
+        if (otherBtn !== btn) {
+          otherBtn.style.color = '';
+        }
+      });
+    });
+  });
+  
+
+}
+
+
