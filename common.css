@@ -186,8 +186,9 @@ body{
 #welcome_words_area{
     text-align: center;
     font-family: Inter;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     background-color: white;
+    padding-bottom: 10px;
 }
 
 .loginframe {
