@@ -12,10 +12,14 @@ a {
 }
 
 a:hover {
-    color:#897757; 
-    text-decoration:none; 
+    color:black; 
+    /* text-decoration:none; */
     cursor:pointer;  
 }
+
+.prodbox-name:hover{
+    text-decoration: underline;
+} 
 h3
 {
 font-size: 21px;
@@ -53,8 +57,10 @@ h4{
 {
 /*position: relative;*/ 
 padding:10px;
-
 }
+.login:hover{
+    text-decoration: underline;
+} 
 .logotext{
     font-size: medium;
 }
@@ -85,8 +91,12 @@ padding:10px;
     font-weight: 600;
 
 }
+.filter-btn: 
 
+.filter-btn:hover {
+    color: 
 
+}
 
 /*
 .filters button{
@@ -99,19 +109,16 @@ padding:10px;
     text-align: center;
     border:none;
 }
-*/
+/* 
 button:hover{
     background-color:  black; 
     color: burlywood;
-}
+} */
 
-.prodbox:hover{
-    background-color:  black; 
-    color: #e7e7e7;
-}
+
 
 .prodbox {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .productgrid{
@@ -134,8 +141,10 @@ button:hover{
 }
 
 .prodbox .prodbox-name{
-    font-size: 30px;
-    font-family: "Staatliches";
+    font-size: 25px;
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    text-transform:uppercase;
 }
 body{
     font-family: Inter;
@@ -152,6 +161,7 @@ body{
 }
 .search-bar{
  background-color: white;
+ 
  width: 700px;
  height: 44px;
  border-radius: 5px;
@@ -159,6 +169,7 @@ body{
  flex-direction: row;
  align-items:center;
  margin: auto;
+ margin-top: 10px;
 }
 #search-btn {
     all: unset;
@@ -169,16 +180,17 @@ body{
 .search{
   all: unset;
   font: 16px system-ui;
-  color: #fff;
+  color: black;
   height: 100%;
   width: 100%;
   padding: 6px 10px;
+
 }
 
 #welcome_words_area{
     text-align: center;
     font-family: Inter;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .loginframe {
@@ -251,7 +263,27 @@ body{
     color: #000000;
     border: 1px solid #000000;
 }
+.btn-add-to-cart{
+    width: 170px;
+    height: 40px;
+    margin-top: 7px;
+   
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
 
+    text-align: center;
+    background-color: white;
+    color: #000000;
+    border: 1px solid #000000;
+}
+.btn-add-to-cart:hover{
+    color: white;
+    background-color: #000000;
+  }
+  
 .btn-submit:hover{
   color: white;
   background-color: #000000;
