@@ -146,6 +146,33 @@ function addHomepageProductInfo(product, i) {
 	// document.getElementById("wine_image").src = "img/wine_" + (i + 1) + ".webp";
 }
 
+function onClickAddtoBasket2(price, n , name) {
+	var basketItemsMap = getBasketMap()
+	
+	var num = n 
+	var totalPrice = price * num;
+
+	var originNum = basketItemsMap.get(name);
+	if (originNum != null && originNum !== undefined) {
+		num = num + originNum.num
+		totalPrice = price * num
+	}
+
+	basketItemsMap.set(name, {
+		num: num,
+		price: "DKK" + price,
+		name : name,
+		totalPrice: "DKK" + totalPrice 
+	})
+	saveBasketMap(basketItemsMap);
+	alert("Add to basket successfully!");
+  }
+
+  
+function addItemtoBasketById(i) {
+  var wineInfo = getWineInfo(i-1)
+	onClickAddtoBasket2(wineInfo.price, 1 , wineInfo.name)
+}
 
 function setCurrentProductDetailPage(i) {
   localStorage.setItem("current_product_detail_page_num", i);
