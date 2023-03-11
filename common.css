@@ -94,7 +94,7 @@ padding:10px;
 }
 
 .filter-btn:hover {
-    color: black
+    text-decoration: underline;
 }
 
 /*
