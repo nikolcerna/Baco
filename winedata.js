@@ -4,108 +4,108 @@ const wineShop = [
     region: "Bordeaux",
     country: "France",
     type:"Champagne",
-    brand:"Emmanuel Rouget",
+    brand:"Château de la Belle Vue",
     vintage: 2015,
-    price: 88.70
+    price: 19.99
   },
   {
     name: "Luminous Blanc",
     region: "Napa Valley",
     country: "USA",
     type:"White",
-    brand:"Emmanuel Rouget",
-    vintage: 2010,
-    price: 26.0
+    brand:"Coastal Vines Winery",
+    vintage: 2016,
+    price: 29.99
   },
   {
-    name: "Vega Sicilia Unico",
+    name: "Barcelona Blanca",
     region: "Ribera del Duero",
     country: "Spain",
-    type:"Red",
-    brand:"Emmanuel Rouget",
+    type:"White",
+    brand:"Bodega del Sol",
     vintage: 2011,
-    price: 32.99
+    price: 39.99
   },
   {
-    name: "Sassicaia",
+    name: "Villa Rosa",
     region: "Tuscany",
     country: "Italy",
-    type:"Red",
-    brand:"Emmanuel Rouget",
-    vintage: 1999,
-    price: 27.99
+    type:"Rosé",
+    brand:"Bellavista Vineyards",
+    vintage: 2016,
+    price: 29.99
   },
   {
-    name: "Château Margaux",
+    name: "Rosé de Reims",
     region: "Bordeaux",
     country: "France",
-    type:"Red",
-    brand:"Emmanuel Rouget",
+    type:"Champagne",
+    brand:"La Maison des Vignes",
     vintage: 2015,
-    price: 25.60
+    price: 49.99
   },
   {
-    name: "Opus One",
+    name: "Celestial Bubbles",
     region: "Napa Valley",
     country: "USA",
-    type:"Red",
-    brand:"Emmanuel Rouget",
-    vintage: 2004,
-    price: 340.0
+    type:"Champagne",
+    brand:"Redwood Cellars",
+    vintage: 2016,
+    price: 49.99
   },
   {
-    name: "Sauvignon Blanc",
+    name: "Sangria Sunset",
     region: "Ribera del Duero",
     country: "Spain",
     type:"Red",
-    brand:"Emmanuel Rouget",
+    brand:"Cava del Rey",
     vintage: 2011,
     price: 49.99
   },
   {
-    name: "Trebbiano Toscano",
+    name: "Sorrento Verde",
     region: "Tuscany",
     country: "Italy",
-    type:"Red",
-    brand:"Emmanuel Rouget",
-    vintage: 2008,
-    price: 40.00
+    type:"White",
+    brand:"La Strada del Vino",
+    vintage: 2016,
+    price: 39.99
   },
   {
-    name: "Pinot Noir",
+    name: "Provence Pink",
     region: "Bordeaux",
     country: "France",
-    type:"Red",
-    brand:"Emmanuel Rouget",
-    vintage: 2007,
-    price: 62.0
+    type:"Rosé",
+    brand:"Domaine de la Roche",
+    vintage: 2015,
+    price: 49.99
   },
   {
-    name: "Merlot",
+    name: "Napa Noir",
     region: "Napa Valley",
     country: "USA",
     type:"Red",
-    brand:"Emmanuel Rouget",
-    vintage: 2015,
-    price: 109.00
+    brand:"Sonoma Hills Vineyard",
+    vintage: 2016,
+    price: 59.99
   },
   {
-    name: "Cabernet Sauvignon",
+    name: "Marbella Blush",
     region: "Ribera del Duero",
     country: "Spain",
-    type:"Red",
-    brand:"Emmanuel Rouget",
-    vintage: 2002,
-    price: 649.30
+    type:"Rosé",
+    brand:"Rioja Real Vineyards",
+    vintage: 2011,
+    price: 49.99
   },
   {
-    name: "Tempranillo",
+    name: "Sicilian Sunset",
     region: "Tuscany",
     country: "Italy",
     type:"Red",
-    brand:"Emmanuel Rouget",
-    vintage: 2019,
-    price: 39.54
+    brand:"Montepulciano Estate",
+    vintage: 2016,
+    price: 39.99
   }
 ];
 
