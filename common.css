@@ -383,3 +383,10 @@ font-size:small;
     background-color: #000000;
 }
 
+footer{
+
+    background-color: white;
+    position: relative;
+    top:200px;
+    
+}
