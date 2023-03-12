@@ -83,15 +83,15 @@
             onclick="setCurrentProductDetailPage(4)"
           >
             <div><img src="winepng.png" alt="Red wine bottle" /></div>
-            <div class="prodbox-name" id="product_4_wine_name">Wine1</div>
+            <div class="prodbox-name" id="product_1_wine_name">Wine1</div>
             <div class="prodbox-char">
-              <span class="prodbox-type" id="product_4_wine_type">Type</span>
-              <span id="product_4_wine_from">From</span>
+              <span class="prodbox-type" id="product_1_wine_type">Type</span>
+              <span id="product_1_wine_from">From</span>
               <!-- <span class="prodbox-country" id="product_4_wine_country"
                 >Country</span
               > -->
             </div>
-            <span class="prodbox-price" id="product_4_wine_price">price</span>
+            <span class="prodbox-price" id="product_1_wine_price">price</span>
           </a>
           <br>
           <input class="btn-add-to-cart"  type="button" onclick="addItemtoBasketById(4)" value="ADD TO CART" /> <!-- add function on click -->
@@ -104,15 +104,15 @@
             onclick="setCurrentProductDetailPage(8)"
           >
             <div><img src="winepng.png" alt="Red wine bottle" /></div>
-            <div class="prodbox-name" id="product_8_wine_name">Wine1</div>
+            <div class="prodbox-name" id="product_2_wine_name">Wine1</div>
             <div class="prodbox-char">
-              <span class="prodbox-type" id="product_8_wine_type">Type</span>
-              <span id="product_8_wine_from">From</span>
+              <span class="prodbox-type" id="product_2_wine_type">Type</span>
+              <span id="product_2_wine_from">From</span>
               <!-- <span class="prodbox-country" id="product_8_wine_country"
                 >Country</span
               > -->
             </div>
-            <span class="prodbox-price" id="product_8_wine_price">price</span>
+            <span class="prodbox-price" id="product_2_wine_price">price</span>
           </a>
           <br>
           <input class="btn-add-to-cart"  type="button" onclick="addItemtoBasketById(8)" value="ADD TO CART" /> <!-- add function on click -->
@@ -124,15 +124,15 @@
             onclick="setCurrentProductDetailPage(12)"
           >
             <div><img src="winepng.png" alt="Red wine bottle" /></div>
-            <div class="prodbox-name" id="product_12_wine_name">Wine1</div>
+            <div class="prodbox-name" id="product_3_wine_name">Wine1</div>
             <div class="prodbox-char">
-              <span class="prodbox-type" id="product_12_wine_type">Type</span>
-              <span id="product_12_wine_from">From</span>
+              <span class="prodbox-type" id="product_3_wine_type">Type</span>
+              <span id="product_3_wine_from">From</span>
               <!-- <span class="prodbox-country" id="product_12_wine_country"
                 >Country</span
               > -->
             </div>
-            <span class="prodbox-price" id="product_12_wine_price">price</span>
+            <span class="prodbox-price" id="product_3_wine_price">price</span>
           </a>
           <br>
           <input class="btn-add-to-cart"  type="button" onclick="addItemtoBasketById(12)" value="ADD TO CART" /> <!-- add function on click -->
@@ -176,7 +176,7 @@
     <script>
       function onIndexStart() {
         addUserNameToWelcome();
-        addAllHomepageProductInfo();
+        addCountryProductInfo("Italy");
       }
       document.body.onload = onIndexStart();
     </script>

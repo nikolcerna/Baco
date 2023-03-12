@@ -6,7 +6,7 @@ const wineShop = [
     type:"Champagne",
     brand:"Emmanuel Rouget",
     vintage: 2015,
-    price: 19.99
+    price: 88.70
   },
   {
     name: "Luminous Blanc",
@@ -14,8 +14,8 @@ const wineShop = [
     country: "USA",
     type:"White",
     brand:"Emmanuel Rouget",
-    vintage: 2016,
-    price: 29.99
+    vintage: 2010,
+    price: 26.0
   },
   {
     name: "Vega Sicilia Unico",
@@ -24,7 +24,7 @@ const wineShop = [
     type:"Red",
     brand:"Emmanuel Rouget",
     vintage: 2011,
-    price: 39.99
+    price: 32.99
   },
   {
     name: "Sassicaia",
@@ -32,8 +32,8 @@ const wineShop = [
     country: "Italy",
     type:"Red",
     brand:"Emmanuel Rouget",
-    vintage: 2016,
-    price: 29.99
+    vintage: 1999,
+    price: 27.99
   },
   {
     name: "Château Margaux",
@@ -42,7 +42,7 @@ const wineShop = [
     type:"Red",
     brand:"Emmanuel Rouget",
     vintage: 2015,
-    price: 49.99
+    price: 25.60
   },
   {
     name: "Opus One",
@@ -50,11 +50,11 @@ const wineShop = [
     country: "USA",
     type:"Red",
     brand:"Emmanuel Rouget",
-    vintage: 2016,
-    price: 49.99
+    vintage: 2004,
+    price: 340.0
   },
   {
-    name: "Vega Sicilia Unico",
+    name: "Sauvignon Blanc",
     region: "Ribera del Duero",
     country: "Spain",
     type:"Red",
@@ -63,49 +63,49 @@ const wineShop = [
     price: 49.99
   },
   {
-    name: "Sassicaia",
+    name: "Trebbiano Toscano",
     region: "Tuscany",
     country: "Italy",
     type:"Red",
     brand:"Emmanuel Rouget",
-    vintage: 2016,
-    price: 39.99
+    vintage: 2008,
+    price: 40.00
   },
   {
-    name: "Château Margaux",
+    name: "Pinot Noir",
     region: "Bordeaux",
     country: "France",
     type:"Red",
     brand:"Emmanuel Rouget",
-    vintage: 2015,
-    price: 49.99
+    vintage: 2007,
+    price: 62.0
   },
   {
-    name: "Opus One",
+    name: "Merlot",
     region: "Napa Valley",
     country: "USA",
     type:"Red",
     brand:"Emmanuel Rouget",
-    vintage: 2016,
-    price: 59.99
+    vintage: 2015,
+    price: 109.00
   },
   {
-    name: "Vega Sicilia Unico",
+    name: "Cabernet Sauvignon",
     region: "Ribera del Duero",
     country: "Spain",
     type:"Red",
     brand:"Emmanuel Rouget",
-    vintage: 2011,
-    price: 49.99
+    vintage: 2002,
+    price: 649.30
   },
   {
-    name: "Sassicaia",
+    name: "Tempranillo",
     region: "Tuscany",
     country: "Italy",
     type:"Red",
     brand:"Emmanuel Rouget",
-    vintage: 2016,
-    price: 39.99
+    vintage: 2019,
+    price: 39.54
   }
 ];
 
@@ -134,6 +134,15 @@ function addAllHomepageProductInfo() {
     addHomepageProductInfo(element, i);
     i = i + 1;
   });
+}
+
+function addCountryProductInfo(country) {
+  var i = 1;
+  wineShop.filter(wine => wine.country === country)
+          .forEach(element =>  {
+            addHomepageProductInfo(element, i);
+            i = i + 1;
+        })
 }
 
 function addHomepageProductInfo(product, i) {
