@@ -128,7 +128,6 @@ function addProductDetailInfo() {
 	document.getElementById("wine_image").src = "img/wine_" + localStorage.getItem("current_product_detail_page_num") + ".webp";
 }
 
-
 function addAllHomepageProductInfo() {
   var i = 1;
   wineShop.forEach(element => {
@@ -178,7 +177,7 @@ function setCurrentProductDetailPage(i) {
   localStorage.setItem("current_product_detail_page_num", i);
 }
 
-function changeColor(){
+function changeColor(){ //for later use
 
   const filterBtns = document.querySelectorAll('.filter-btn');
 
