@@ -1,18 +1,18 @@
 const wineShop = [
   {
-    name: "Château Margaux",
+    name: "Chateau de la Lune",
     region: "Bordeaux",
     country: "France",
-    type:"Red",
+    type:"Champagne",
     brand:"Emmanuel Rouget",
     vintage: 2015,
     price: 19.99
   },
   {
-    name: "Opus One",
+    name: "Luminous Blanc",
     region: "Napa Valley",
     country: "USA",
-    type:"Red",
+    type:"White",
     brand:"Emmanuel Rouget",
     vintage: 2016,
     price: 29.99

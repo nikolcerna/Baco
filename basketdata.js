@@ -43,8 +43,6 @@ function addAllBasketItem() {
 	}
 }
 
-
-
 function fromPriceToNum(s) {
 	return Number(s
 	.replace("$", "")
