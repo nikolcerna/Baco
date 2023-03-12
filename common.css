@@ -355,3 +355,35 @@ left:140px;
 
     font-size: 14px;
 }
+#basket_list_container{
+font-size:small;
+}
+#basket_wine_remove{
+
+    width: 135px;
+    height: 35px;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    position: relative;
+    bottom: 3px;
+
+    text-align: center;
+    background-color: white;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+#basket_wine_remove:hover{
+    color: white;
+    background-color: #000000;
+}
+
+.hr_basket{
+    
+    margin-top: 10px;
+}
