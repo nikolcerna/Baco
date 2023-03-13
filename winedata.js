@@ -125,7 +125,7 @@ function addProductDetailInfo() {
 	document.getElementById("wine_country").innerText = product.country;
 	document.getElementById("wine_year").innerText = product.vintage;
 	document.getElementById("wine_brand").innerText = product.brand;
-	document.getElementById("wine_image").src = "img/wine_" + localStorage.getItem("current_product_detail_page_num") + ".webp";
+	document.getElementById("wine_image").src = "img/wine_" + localStorage.getItem("current_product_detail_page_num") + ".png";
 }
 
 function addAllHomepageProductInfo() {
@@ -176,7 +176,6 @@ function onClickAddtoBasket2(price, n , name) {
 	alert("Add to basket successfully!");
   }
 
-  
 function addItemtoBasketById(i) {
   var wineInfo = getWineInfo(i-1)
 	onClickAddtoBasket2(wineInfo.price, 1 , wineInfo.name)
