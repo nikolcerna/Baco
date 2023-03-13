@@ -332,6 +332,11 @@ body{
     background-color: #000000;
   }
   
+.btn-add-to-cart-wide:hover{
+    color: white;
+    background-color: #000000;
+  }
+  
 .btn-submit:hover{
   color: white;
   background-color: #000000;
