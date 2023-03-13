@@ -142,7 +142,7 @@ button:hover{
 }
 
 
-@media(min-width: 960px){
+@media(min-width: 1150px){
 .productgrid{
     /* padding-left: 80px; */
     padding-right: 215px;
@@ -157,17 +157,37 @@ button:hover{
 }
 
 
-@media(max-width: 960px){
-    .productgrid{
-        /* padding-left: 80px; */
-        padding-right: 215px;
+@media(max-width: 1150px){
+     .productgrid{
         display: grid;
-        /* text-align: center; */
         grid-template-columns: 100%;
         column-gap: 65px;
         row-gap: 20px;
     }
+    .leftside{
+        display: flex;
+        flex-direction: row;
+        row-gap: 11px;
+        padding-left: 75px;
+    } 
+    .mainbody{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 105px;
+        padding-left: 50px;
     }
+    }
+
+
+
+
+
+
+
+
+
 
 .productgrid div{
     justify-self: center;
