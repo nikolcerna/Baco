@@ -197,6 +197,13 @@ button:hover{
     height: auto;
 }
 
+.inside_text{
+    font-family: "Roboto Condensed";
+    text-transform:uppercase;
+    font-weight: 400;
+}
+
+
 .prodbox .prodbox-name{
     font-size: 25px;
     font-family: "Roboto Condensed";
