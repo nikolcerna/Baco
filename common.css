@@ -115,15 +115,19 @@ button:hover{
 
 .prodbox {
     margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .productgrid{
-    padding-left: 80px;
-    padding-right: 80px;
+    /* padding-left: 80px; */
+    padding-right: 215px;
     display: grid;
-    text-align: center;
-    grid-template-columns: 25% 25% 25% 25%;
-    column-gap: 10px;
+    /* text-align: center; */
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 65px;
     row-gap: 20px;
 }
 
@@ -501,4 +505,16 @@ footer{
     background-color: white;
     color: #000000;
     border: 1px solid #000000;
+}
+
+.mainbody{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 45px;
+}
+
+.leftside{
+    display: flex;
+    flex-direction: column;
 }
