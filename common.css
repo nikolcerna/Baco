@@ -121,6 +121,8 @@ button:hover{
     justify-content: center;
 }
 
+
+@media(min-width: 960px){
 .productgrid{
     /* padding-left: 80px; */
     padding-right: 215px;
@@ -130,6 +132,22 @@ button:hover{
     column-gap: 65px;
     row-gap: 20px;
 }
+
+
+}
+
+
+@media(max-width: 960px){
+    .productgrid{
+        /* padding-left: 80px; */
+        padding-right: 215px;
+        display: grid;
+        /* text-align: center; */
+        grid-template-columns: 100%;
+        column-gap: 65px;
+        row-gap: 20px;
+    }
+    }
 
 .productgrid div{
     justify-self: center;
