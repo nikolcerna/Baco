@@ -263,7 +263,7 @@ body{
     border: 1px solid #000000;
 }
 .btn-add-to-cart{
-    width: 170px;
+    width: 300px;
     height: 40px;
     margin-top: 7px;
    
@@ -342,13 +342,12 @@ body{
 position:relative;
 left:140px;
 }
-
 .number-form-input{
     width: 50px;
     text-align: center;
 }
 .list-group{
-    width: 450px;
+    width: 300px;
 
 }
 .list-group-item{
@@ -468,4 +467,21 @@ footer{
     align-items: center;
     height: 100vh;
     margin-top: 60px;
+}
+
+#wine_image{
+    width: 300px;
+}
+
+#wine_name{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 0;
+
+}
+
+#wine_price{
+
+    font-size:20px;
+
 }
