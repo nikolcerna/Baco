@@ -178,6 +178,13 @@ button:hover{
     height: auto;
 }
 
+.inside_text{
+    font-family: "Roboto Condensed";
+    text-transform:uppercase;
+    font-weight: 400;
+}
+
+
 .prodbox .prodbox-name{
     font-size: 25px;
     font-family: "Roboto Condensed";
@@ -551,14 +558,6 @@ footer{
     #basket_wine_remove:hover{
     cursor:pointer;
     }
-  
-    .col-md-2{
-        height: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width:20px;
-    }
     
     .row{
         justify-content: space-between;
@@ -587,8 +586,4 @@ footer{
     color: #000000;
     border: 1px solid #000000;
     }
-    .col-md-3{
-       font-size: 15px;
-       
-    }
-      
+    
