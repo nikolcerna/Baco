@@ -262,7 +262,7 @@ body{
     color: #000000;
     border: 1px solid #000000;
 }
-.btn-add-to-cart{
+.btn-add-to-cart-wide{
     width: 300px;
     height: 40px;
     margin-top: 7px;
@@ -484,4 +484,21 @@ footer{
 
     font-size:20px;
 
+}
+
+.btn-add-to-cart{
+    width: 170px;
+    height: 40px;
+    margin-top: 7px;
+   
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    text-align: center;
+    background-color: white;
+    color: #000000;
+    border: 1px solid #000000;
 }
