@@ -504,15 +504,19 @@ footer{
     display: flex;
     justify-content: center;
     align-content: center;
-    gap: 45px;
+    gap: 105px;
 }
 
 .leftside{
     display: flex;
     flex-direction: column;
+    row-gap: 11px;
 }
 
-
+.leftside_box{
+    position: sticky;
+    top: 15px;
+}
 
 .btn-checkout:hover{
     color: white;
