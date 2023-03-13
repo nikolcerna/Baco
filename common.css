@@ -360,25 +360,7 @@ left:140px;
 #basket_list_container{
 font-size:small;
 }
-#basket_wine_remove{
 
-    width: 135px;
-    height: 35px;
-    display: flex;
-	align-items: center;
-	justify-content: center;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    position: relative;
-    bottom: 3px;
-
-    text-align: center;
-    background-color: white;
-    color: #000000;
-    border: 1px solid #000000;
-}
 
 #basket_wine_remove:hover{
     color: white;
@@ -517,3 +499,54 @@ footer{
     display: flex;
     flex-direction: column;
 }
+
+.btn-checkout{
+    display: block;
+    margin: 0 auto;
+    width: 170px;
+    height: 40px;
+    margin-top: 7px;
+   
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+
+    text-align: center;
+    background-color: white;
+    color: #000000;
+    border: 1px solid #000000;
+   
+}
+.btn-checkout:hover{
+    color: white;
+    background-color: #000000;
+}
+#basket_list_container{
+    font-size:small;
+    }
+    #basket_wine_remove{
+        width:50px;
+        height: 30px;
+       
+    }
+    
+    #basket_wine_remove:hover{
+    cursor:pointer;
+    }
+    .col-md-3{
+      font-size: 15px;
+     
+    }
+    .col-md-2{
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:20px;
+    }
+    
+    .row{
+        justify-content: space-between;
+    }

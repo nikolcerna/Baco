@@ -3,21 +3,22 @@ const basket_map_id = "basketMap";
 
 function addOneBasketItem(goodsData) {
   var newElement = document.createElement("div");
-	var s = '<div class="container text-align:center">' +
-		'<div class="row">' +
-			'<div class="col-md-1"> </div>' +
-			'<div class="col-md-2" id="basket_wine_name">	<h4>' + goodsData.name + '</h4> </div>' +
-			'<div class="col-md-2" id="basket_wine_num"> <h4>' + goodsData.num + '</h4> </div>' + 
-			'<div class="col-md-2" id="basket_wine_price"> <h4>' + goodsData.price + '</h4> </div>' +
-			'<div class="col-md-2" id="basket_wine_total_price"> <h4>' + goodsData.totalPrice + ' </h4> </div>' +
-			'<button class="col-md-1" id="basket_wine_remove" onclick="removeBasketItem(\'' +  goodsData.name + '\')"> Remove</button>' + 
-			'<div class="col-md-1"> </div>' +
-			'<hr style="margin-top: 10px;">' +
-		'</div>'
+    var s = '<div class="container text-align:center">' +
+        '<div class="row">' +
+            '<div class="col-md-1"> </div>' +
+            '<div class="col-md-2" id="basket_wine_name">   <h4 class="col-md-3">' + goodsData.name + '</h4> </div>' +
+            '<div class="col-md-2" id="basket_wine_num"> <h4 class="col-md-3">' + goodsData.num + '</h4> </div>' + 
+            // '<div class="col-md-2" id="basket_wine_price"> <h4 class="col-md-3">' + goodsData.price + '</h4> </div>' +
+            '<div class="col-md-2" id="basket_wine_total_price"> <h4 class="col-md-3">' + goodsData.totalPrice + ' </h4> </div>' +
+            '<img class="col-md-2" id="basket_wine_remove" src="img/icon_trash_black.png" onclick="removeBasketItem(\'' +  goodsData.name + '\')">' + 
+            '<div class="col-md-1"> </div>' +
+            '<hr style="margin-top: 10px;">' +
+        '</div>'
   newElement.innerHTML = s;
   const parentElement = document.getElementById("basket_list_items_container");
   parentElement.appendChild(newElement);
 }
+
 
 function removeBasketItem() {
 	console.log("afeawfwaefawefewa")
