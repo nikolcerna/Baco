@@ -1,6 +1,6 @@
 // index.js
 import express from 'express'
-import {getAllWines, postWine, getWine,putWine, deleteWine } from './winedata.controler.js'
+import {getAllWines, getWine } from './winedata.controler.js'
 
 export const winedataRouter = express.Router();
 
