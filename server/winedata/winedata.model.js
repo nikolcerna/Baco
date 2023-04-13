@@ -1,10 +1,10 @@
 import * as fs from "fs/promises";
-const WINEDATA_FILE = "./data.json";
+const DATA_FILE = "./data.json";
 
 // return all customer from file
 export async function getAll() {
   try {
-    let winesTxt = await fs.readFile(WINEDATA_FILE);
+    let winesTxt = await fs.readFile(DATA_FILE);
     let wines = JSON.parse(winesTxt);
     return wines.wine_data;
   } catch (err) {

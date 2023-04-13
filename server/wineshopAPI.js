@@ -1,6 +1,9 @@
 import express from "express";
 
 import {winedataRouter} from "./winedata/winedata.route.js";
+import {basketRouter} from "./basket/basket.route.js";
+import {userRouter} from "./user/user.route.js";
+
 const app = express();
 const PORT = 3000;
 
@@ -9,8 +12,8 @@ app.use(express.json());
 
 // paths handled by quizzesRouter
 app.use(winedataRouter)
-
-
+app.use(basketRouter)
+app.use(userRouter)
 app.get("/", (req, res) => res.send("Server 3: Hello World!"));
 
 
