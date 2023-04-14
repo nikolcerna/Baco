@@ -143,9 +143,12 @@ function addProductDetailsInfo(){
   document.getElementById("wine_details").innerHTML = product.details;
 }
 
-function addAllHomepageProductInfo() {
-  var i = 1;
-  wineShop.forEach(element => {
+async function addAllHomepageProductInfo() {
+  let i = 1;
+  const response = await fetch('http://localhost:3000/winedata');
+  const winedata = await response.json();
+
+  winedata.forEach(element => {
     addHomepageProductInfo(element, i);
     i = i + 1;
   });
