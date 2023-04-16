@@ -21,7 +21,6 @@ export async function getAll() {
 }
 
 // get wine by type
-
 export async function getWineByType(type) {
   let wineData = await getAll();
   let typeData = wineData.filter(wineData => wineData.type === type)
@@ -29,5 +28,27 @@ export async function getWineByType(type) {
     return typeData
   } else {
     throw new Error(`no such type: ${type}`);
+  }
+}
+
+// get wine by orgin
+export async function getWineByOrigin(country) {
+  let wineData = await getAll();
+  let typeData = wineData.filter(wineData => wineData.country === country)
+  if (typeData.length > 0) {
+    return typeData
+  } else {
+    throw new Error(`no such origin: ${country}`);
+  }
+}
+
+// get wine by year
+export async function getWineByYear(vintage) {
+  let wineData = await getAll();
+  let typeData = wineData.filter(wineData => wineData.vintage.toString() === vintage)
+  if (typeData.length > 0) {
+    return typeData
+  } else {
+    throw new Error(`no such year for our wines: ${vintage}`);
   }
 }

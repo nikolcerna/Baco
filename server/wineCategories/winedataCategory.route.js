@@ -1,6 +1,6 @@
 // index.js
 import express from 'express'
-import {getWineByCategory} from './winedataCategory.controler.js'
+import {getWineByCategory, getWineByCountry, getWineByVintage} from './winedataCategory.controler.js'
 
 export const winedataCategoryRouter = express.Router();
 
@@ -8,5 +8,6 @@ export const winedataCategoryRouter = express.Router();
 winedataCategoryRouter.use(express.json())
 
 // route handlers
-//winedataRouter.get("/winedata", getAllWines);
 winedataCategoryRouter.get("/winedatacategory/:type", getWineByCategory);
+winedataCategoryRouter.get("/winedataorigin/:country", getWineByCountry);
+winedataCategoryRouter.get("/winedatayear/:vintage", getWineByVintage);
