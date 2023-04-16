@@ -153,7 +153,6 @@ async function addAllHomepageProductInfo() {
     i = i + 1;
   });
 }
-
 function addCountryProductInfo(country) {
   var i = 1;
   wineShop.filter(wine => wine.country === country)
