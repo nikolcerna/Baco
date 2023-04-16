@@ -9,4 +9,4 @@ winedataCategoryRouter.use(express.json())
 
 // route handlers
 //winedataRouter.get("/winedata", getAllWines);
-winedataCategoryRouter.get("/winedata/:type", getWineByCategory);
+winedataCategoryRouter.get("/winedatacategory/:type", getWineByCategory);

@@ -3,6 +3,7 @@ import cors from "cors";
 import {winedataRouter} from "./winedata/winedata.route.js";
 import {basketRouter} from "./basket/basket.route.js";
 import {userRouter} from "./user/user.route.js";
+import {winedataCategoryRouter} from "./wineCategories/winedataCategory.route.js";
 
 const app = express();
 const PORT = 3000;
@@ -18,6 +19,7 @@ app.use(cors());
 app.use(winedataRouter)
 app.use(basketRouter)
 app.use(userRouter)
+app.use(winedataCategoryRouter)
 app.get("/", (req, res) => res.send("Server 3: Hello World!"));
 
 

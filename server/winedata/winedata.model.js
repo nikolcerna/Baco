@@ -1,5 +1,6 @@
 import * as fs from "fs/promises";
-const DATA_FILE = "./server/data.json";
+import {getDataFilePath, save} from "../common.js";
+const DATA_FILE = getDataFilePath();
 
 // return all customer from file
 export async function getAll() {
@@ -15,12 +16,6 @@ export async function getAll() {
     } // // cannot handle this exception, so rethrow
     else throw err;
   }
-}
-
-function findWine(wineArray, Id) {
-  return wineArray.findIndex(
-    (currWine) => currWine.wineid === Id
-  );
 }
 
 // get gustomer by ID

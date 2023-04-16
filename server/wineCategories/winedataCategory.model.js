@@ -1,5 +1,7 @@
 import * as fs from "fs/promises";
-const DATA_FILE = "./data.json";
+import {getDataFilePath, save} from "../common.js";
+
+const DATA_FILE = getDataFilePath();
 
 // return all wines from file
 
@@ -22,9 +24,9 @@ export async function getAll() {
 
 export async function getWineByType(type) {
   let wineData = await getAll();
-  let wineIndex = wineData.findIndex(wineData => wineData.type === type)
-  if (wineIndex !== -1) {
-    return wineData[wineIndex]
+  let typeData = wineData.filter(wineData => wineData.type === type)
+  if (typeData.length > 0) {
+    return typeData
   } else {
     throw new Error(`no such type: ${type}`);
   }

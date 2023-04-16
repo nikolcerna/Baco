@@ -1,6 +1,7 @@
 import * as fs from "fs/promises";
+import {getDataFilePath, save} from "../common.js";
 
-const DATA_FILE = "./server/data.json";
+const DATA_FILE = getDataFilePath();
 
 // return all customer from file
 export async function getAllUserData() {
@@ -63,9 +64,3 @@ export async function addOneUser(newUserInfo) {
   const userIndex2 = userData.findIndex(user => user.name === name);
   return userData[userIndex2];
 }
-
-async function save(alldata) {
-  let result = JSON.stringify(alldata);
-  await fs.writeFile(DATA_FILE, result);
-}
-
