@@ -52,3 +52,13 @@ export async function getWineByYear(vintage) {
     throw new Error(`no such year for our wines: ${vintage}`);
   }
 }
+//get wine by price
+export async function getWineByPrice(maxPrice) {
+  let wineData = await getAll();
+  let filteredData = wineData.filter(wine => wine.price <= parseFloat(maxPrice));
+  if (filteredData.length > 0) {
+    return filteredData;
+  } else {
+    throw new Error(`No wines found that cost less than or equal to ${maxPrice}`);
+  }
+}
