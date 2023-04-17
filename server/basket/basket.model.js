@@ -86,7 +86,7 @@ export async function deleteOneItemInBasket(userName, itemId) {
   const userIndex = allData.user_data.findIndex(user => user.name === userName);
   if (userIndex !== -1) {
     // 查找新item对应的旧item
-    const itemIndex = allData.user_data[userIndex].basket.findIndex(item => item.wine_id === itemId);
+    const itemIndex = allData.user_data[userIndex].basket.findIndex(item => item.wine_id.toString() === itemId);
     if (itemIndex !== -1) {
       allData.user_data[userIndex].basket.splice(itemIndex, 1);
       save(allData);
